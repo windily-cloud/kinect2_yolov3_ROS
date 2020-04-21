@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/install
+
+Name: kinect2_bridge
+Description: Description of kinect2_bridge
+Version: 0.0.1
+Cflags: -I/home/xll/windily/catkin_ws/install/include
+Libs: -L/home/xll/windily/catkin_ws/install/lib 
+Requires: kinect2_registration

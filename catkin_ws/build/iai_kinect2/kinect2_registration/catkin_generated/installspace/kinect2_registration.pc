@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/install
+
+Name: kinect2_registration
+Description: Description of kinect2_registration
+Version: 0.0.1
+Cflags: -I/home/xll/windily/catkin_ws/install/include -I/usr/include
+Libs: -L/home/xll/windily/catkin_ws/install/lib -lkinect2_registration /usr/lib/x86_64-linux-gnu/libOpenCL.so
+Requires: 

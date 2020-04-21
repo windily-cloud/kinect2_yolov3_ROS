@@ -1,0 +1,80 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9e144/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e144.dir/build.make CMakeFiles/cmTC_9e144.dir/build
+make[1]: Entering directory '/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9e144.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9e144.dir/CheckSymbolExists.c.o   -c /home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9e144
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e144.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9e144.dir/CheckSymbolExists.c.o  -o cmTC_9e144 -rdynamic 
+CMakeFiles/cmTC_9e144.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9e144.dir/build.make:97: recipe for target 'cmTC_9e144' failed
+make[1]: *** [cmTC_9e144] Error 1
+make[1]: Leaving directory '/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9e144/fast' failed
+make: *** [cmTC_9e144/fast] Error 2
+
+File /home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5cb81/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5cb81.dir/build.make CMakeFiles/cmTC_5cb81.dir/build
+make[1]: Entering directory '/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cb81.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5cb81.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5cb81
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cb81.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5cb81.dir/CheckFunctionExists.c.o  -o cmTC_5cb81 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5cb81.dir/build.make:97: recipe for target 'cmTC_5cb81' failed
+make[1]: *** [cmTC_5cb81] Error 1
+make[1]: Leaving directory '/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5cb81/fast' failed
+make: *** [cmTC_5cb81/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test OpenCL_CXX_WORKS failed with the following output:
+Change Dir: /home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_54660/fast"
+/usr/bin/make -f CMakeFiles/cmTC_54660.dir/build.make CMakeFiles/cmTC_54660.dir/build
+make[1]: Entering directory '/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_54660.dir/src.cxx.o
+/usr/bin/c++    -I/include/internal  -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -std=c++11 -fopenmp -DOpenCL_CXX_WORKS   -o CMakeFiles/cmTC_54660.dir/src.cxx.o -c /home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx:2:21: fatal error: CL/cl.hpp: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_54660.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_54660.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_54660.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/xll/windily/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_54660/fast' failed
+make: *** [cmTC_54660/fast] Error 2
+
+Source file was:
+
+#include <CL/cl.hpp>
+int main() {
+  cl::Context context;
+  cl::Platform platform;
+  cl::Device device;
+  return 0;
+}
