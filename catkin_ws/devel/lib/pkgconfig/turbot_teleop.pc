@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/devel
+
+Name: turbot_teleop
+Description: Description of turbot_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xll/windily/catkin_ws/devel/lib 
+Requires: 

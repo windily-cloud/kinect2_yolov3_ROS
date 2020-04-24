@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/install
+
+Name: turbot_rviz
+Description: Description of turbot_rviz
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xll/windily/catkin_ws/install/lib 
+Requires: 

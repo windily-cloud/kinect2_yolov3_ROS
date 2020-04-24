@@ -1,2 +1,2 @@
-iai_kinect2/iai_kinect2:iai_kinect2/kinect2_bridge:iai_kinect2/kinect2_calibration:iai_kinect2/kinect2_registration:iai_kinect2/kinect2_viewer
--DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/xll/windily/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xll/windily/catkin_ws/install -G Unix Makefiles
+darknet_ros/darknet_ros:darknet_ros/darknet_ros_msgs:iai_kinect2/iai_kinect2:iai_kinect2/kinect2_bridge:iai_kinect2/kinect2_calibration:iai_kinect2/kinect2_registration:iai_kinect2/kinect2_viewer:image_pipeline/camera_calibration:image_pipeline/depth_image_proc:image_pipeline/image_pipeline:image_pipeline/image_proc:image_pipeline/image_publisher:image_pipeline/image_rotate:image_pipeline/image_view:image_pipeline/stereo_image_proc:show_image
+-DCMAKE_BUILD_TYPE=Rlease -DCATKIN_DEVEL_PREFIX=/home/xll/windily/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xll/windily/catkin_ws/install -G Unix Makefiles

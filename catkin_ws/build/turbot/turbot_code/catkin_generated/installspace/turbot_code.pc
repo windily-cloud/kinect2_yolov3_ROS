@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/install
+
+Name: turbot_code
+Description: Description of turbot_code
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xll/windily/catkin_ws/install/lib 
+Requires: 

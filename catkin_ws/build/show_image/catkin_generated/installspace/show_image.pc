@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/install
+
+Name: show_image
+Description: Description of show_image
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xll/windily/catkin_ws/install/lib 
+Requires: 

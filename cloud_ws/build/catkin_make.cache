@@ -1,0 +1,2 @@
+test_topic
+-DCATKIN_DEVEL_PREFIX=/home/xll/windily/cloud_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xll/windily/cloud_ws/install -G Unix Makefiles

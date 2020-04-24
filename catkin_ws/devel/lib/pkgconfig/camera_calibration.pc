@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/devel
+
+Name: camera_calibration
+Description: Description of camera_calibration
+Version: 1.14.0
+Cflags: 
+Libs: -L/home/xll/windily/catkin_ws/devel/lib 
+Requires: 

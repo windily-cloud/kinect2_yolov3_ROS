@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/devel
+
+Name: darknet_ros_msgs
+Description: Description of darknet_ros_msgs
+Version: 1.1.4
+Cflags: -I/home/xll/windily/catkin_ws/devel/include
+Libs: -L/home/xll/windily/catkin_ws/devel/lib 
+Requires: actionlib_msgs geometry_msgs sensor_msgs message_runtime std_msgs

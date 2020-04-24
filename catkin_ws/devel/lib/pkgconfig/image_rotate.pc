@@ -1,0 +1,8 @@
+prefix=/home/xll/windily/catkin_ws/devel
+
+Name: image_rotate
+Description: Description of image_rotate
+Version: 1.14.0
+Cflags: -I/home/xll/windily/catkin_ws/devel/include
+Libs: -L/home/xll/windily/catkin_ws/devel/lib 
+Requires: 
